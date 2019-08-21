@@ -11,3 +11,15 @@ console.log(person);
 console.log(person["firstname"]);
 
 console.log(person.firstname);
+
+
+var person = {
+    firstname: 'Tony',
+    lastname: 'Alicea'
+}
+
+function greet(person) {
+    console.log('Hi ' + person.firstname);
+}
+
+greet({firstname: 'Dave', lastname: 'Davidson'});
