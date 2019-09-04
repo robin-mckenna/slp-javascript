@@ -33,3 +33,13 @@ var person2 = {
 var borrowing = person.getFullName.apply(person2);
 
 console.log(borrowing);
+
+// Function currying
+
+function multiply(a, b) {
+    return a*b;
+}
+
+var multiplyByTwo = multiply.bind(this, 2);
+
+console.log(multiplyByTwo(6));
