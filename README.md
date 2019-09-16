@@ -14,6 +14,6 @@ https://www.youtube.com/watch?v=b62pf5bjBWY&list=PLneJ4Rpp6YlGAfkF6ulc1JnZNNyyci
 
 ### [Closures and Prototypes](docs/closures-and-prototypes.md)
 
-### [Function constructors and ES6](function-constructors-and-es6.md)
+### [Function constructors and ES6](docs/function-constructors-and-es6.md)
 
-### [Strict Mode, jquery and Mini Framework](strict-mode-jquery-and-mini-framework.md)
+### [Strict Mode, jquery and Mini Framework](docs/strict-mode-jquery-and-mini-framework.md)
