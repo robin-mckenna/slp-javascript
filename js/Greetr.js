@@ -1,5 +1,3 @@
-// Execution Context
-
 (function(global, $) {
     var Greetr = function(firstName, lastName, language) {
         return new Greetr.init(firstName, lastName, language);
@@ -37,23 +35,23 @@
             return greetings[this.language] + ' ' + this.firstName + '!';
         },
 
-        formalGreetings: function() {
-            return formalGreetings([this.language]) + ', ' this.fullName;
+        formalGreeting: function() {
+            return formalGreetings[this.language] + ', ' + this.fullName;
         },
 
-        // greet: function(formal) {
-        //     var msg;
-        //
-        //     if(formal) {
-        //         msg = this.formalGreetings();
-        //     } else {
-        //         msg = this.greeting();
-        //     }
-        //
-        //     if (console) {
-        //         console.log(msg);
-        //     }
-        // }
+        greet: function(formal) {
+            var msg;
+
+            if(formal) {
+                msg = this.formalGreeting();
+            } else {
+                msg = this.greeting();
+            }
+
+            if (console) {
+                console.log(msg);
+            }
+        }
     }
 
     Greetr.init = function(firstName, lastName, language) {
